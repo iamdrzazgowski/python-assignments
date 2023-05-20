@@ -1,5 +1,3 @@
-
-x = 123
 def isPalindrom(x):
     if x < 0 or (x > 0 and x % 10 == 0):
         return False
