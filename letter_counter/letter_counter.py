@@ -2,6 +2,7 @@ word = str(input("Enter a word: "))
 char = str(input("Enter a char: "))
 word = word.lower()
 
+
 def create_dict(word):
     dict = {}
     for i in word:
@@ -11,16 +12,22 @@ def create_dict(word):
             dict[i] += 1
     return dict
 
+
 def remove_useless_keys(dict):
-    uselessKeys = [",","."," ",":"]
+    uselessKeys = [",", ".", " ", ":"]
 
     for j in uselessKeys:
         if j in dict:
             del dict[j]
     return dict
 
+
 def single_letter_counter(dict, char):
-    return dict[char]
+    try:
+        return dict[char]
+    except:
+        return "There is no this char"
+
 
 # dict = create_dict(word)
 print(remove_useless_keys(create_dict(word)))
