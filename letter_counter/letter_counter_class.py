@@ -28,11 +28,3 @@ class LetterCounter:
         for j in uselessKeys:
             if j in self.dict:
                 del self.dict[j]
-
-# word = str(input("Enter a word: "))
-# char = str(input("Enter a char: "))
-# l = LetterCounter(word, char)
-# l.CreateDict()
-# l.RemoveUselessKeys()
-# print(l.ShowDict())
-# print(l.SingleLetterCounter())
