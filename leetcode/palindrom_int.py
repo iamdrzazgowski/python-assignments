@@ -21,4 +21,4 @@ def isPalindrom(x):
             return False
 
 
-print(isPalindrom(1221))
+print(isPalindrom(1234))
